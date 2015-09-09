@@ -1,25 +1,25 @@
-    <div class="row" ng-controller="mainCtrl">
+    <div class="row">
         <div class="small-10 column">
             <!-- <p>{{users | json}}</p> -->
-            <h4>AngularJS, Foundation and Animate CSS</h4>
+            <h4>Glow Medical Spa</h4>
         </div>
         <div class="column medium-4 animated" ng-class-odd="'slideInLeft'" ng-class-even="'slideInRight'" ng-repeat="u in users">
             <div class="panel text-center">
-            <img class="circle" src="imgs/1.png">
-                <!-- <img class="circle" src="{{u.user.picture.medium}}"> -->
-                <h3 class="ellipsis">{{u.user.username}}</h3>
-                <p class="ellipsis-2">info here</p>
+            <!-- <img class="circle" src="imgs/1.png">images/{{user.gender | lowercase}}.png -->
+                <img class="circle" style="max-width: 30%" src="/card/imgs/{{u.sex | lowercase}}.png">
+                <h4 class="ellipsis">{{u.fname}} {{u.lname}}</h4>
+                <p class="ellipsis-2">{{u.DOB | date:'MM/dd/yyyy'}}</p>
                 <hr>
                 <div class="medium-12 sm-centered lg-centered column">
                     <ul class="small-block-grid-4 text-center">
-                        <li><a href=""><i class="fa fa-pinterest fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#editProfile/{{u.id}}"><i class="glyphicon glyphicon-edit fa-2x"></i></a></li>
+                        <li><a href=""><i class="glyphicon glyphicon-file fa-2x"></i></a></li>
+                        <li><a href=""><i class="glyphicon glyphicon-film fa-2x"></i></a></li>
+                        <li><a href=""><i class="glyphicon glyphicon-remove fa-2x"></i></a></li>
                     </ul>
                 </div>
-                <hr>
-                <a href="#" data-dropdown="drop{{u.user.username}}" aria-controls="drop{{u.user.username}}" class="ellipsis">{{u.user.location.city}}, {{u.user.location.state}}</a>
+               <hr>
+    <!--              <a href="#" data-dropdown="drop{{u.lname}}" aria-controls="drop{{u.fname}}" class="ellipsis">{{u.sex}}, {{u.fname}}</a> -->
             </div>
         </div>
     </div>
