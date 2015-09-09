@@ -1,0 +1,22 @@
+body {
+    background-color:#5682B4;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* css3 2 line ellipsis for text overflow */
+.ellipsis-2 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.panel h3, .ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

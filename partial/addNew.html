@@ -1,0 +1,62 @@
+
+    <div class="section">
+
+      <button ng-click="loadPatient()"></button>
+       <input type="text" ng-model="id" placeholder="id"/>
+        <h3>{{patient.fname}}</h3>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Add New</h3>
+              </div>
+              <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <div class="col-sm-2">
+                      <label for="inputFirstName" class="control-label">First Name</label>
+                    </div>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="fname" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-2">
+                      <label for="Last Name" class="control-label">Last Name</label>
+                    </div>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-2">
+                      <label for="dob" class="control-label">DOB</label>
+                    </div>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="dob" placeholder="dob">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-2">
+                      <label for="sex" class="control-label">Gender</label>
+                    </div>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="sex" placeholder="sex">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <a class="btn btn-primary">Save</a>
+                      <a class="btn btn-default">Cancel</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
