@@ -1,6 +1,6 @@
 (function(){
-
-angular.module('mainApp', ['ngResource', 'ngRoute', 'mainApp.mainCtrl'])
+'use strict';
+angular.module('mainApp', ['ngResource', 'ngRoute', 'mainApp.mainCtrl', 'mainApp.editProfileCtrl'])
 
 // app.factory('Patients', function($resource){
 // 	return $resource('http://api.randomuser.me/?results=24');
@@ -28,7 +28,7 @@ angular.module('mainApp', ['ngResource', 'ngRoute', 'mainApp.mainCtrl'])
 		// route for patient profile
 		.when('/editProfile/:id', {
 			templateUrl: '/card/partial/editProfile.html',
-			controller: 'mainCtrl'
+			controller: 'editProfileCtrl'
 		})
 
 		// any other

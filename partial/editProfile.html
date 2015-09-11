@@ -1,27 +1,115 @@
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Patient Profile</h3>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+                    <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Patient Profile
+                    </h3>
+                </div>
+                <div class="panel-body">
+
+
+            <form ng-init="loadPatientData()" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="inputfname" class="col-sm-2 control-label">
+                        Name:
+                    </label>
+                    <div class="col-sm-4">
+                        <input required type="text" class="form-control" id="fname" ng-model="patient.fname" placeholder="First name"/>
                     </div>
-                    <div class="panel-body">
-                        <button ng-click="loadPatient()"></button>
-                        <input type="text" ng-model="id" placeholder="id" />
-                        <h3>{{patient.fname}}</h3>
+                    <div class="col-sm-6">
+                        <input required type="text" class="form-control" id="lname" ng-model="patient.lname" placeholder="Last name"/>
+                    </div>                    
+                </div>
+                <div class="form-group has-sucess">
+                     
+                    <label for="inputDOB" class="col-sm-2 control-label">
+                        DOB:
+                    </label>
+                    <div class="col-sm-10">
+                        <input ng-value="patient.DOB | date:'MM/dd/yyyy'" type="text" class="form-control" id="dobinput" required placeholder="mm/dd/yyyy" />
+                    </div>
+                </div> 
+
+                <div class="form-group">
+                     
+                    <label for="address" class="col-sm-2 control-label">
+                        Address:
+                    </label>
+                    <div class="col-sm-10">
+                       <input type="text" ng-model="patient.street" class="form-control" id="street" placeholder="Street" /> 
+                    </div>                    
+
+                </div>                               
+                <div class="form-group">
+                    <label for="citystate" class="col-sm-2 control-label">
+                        City/State/Zip:
+                    </label>                
+                    <div class="col-sm-4">
+                        <input type="text" ng-model="patient.city" class="form-control" id="city" placeholder="City" />                       
+                    </div>   
+                    <div class="col-sm-3">
+                      <select class="form-control" ng-model="selectedState" ng-options="state.name for state in states track by state.code">
+                          </select>
+
+                     </div>
+                    <div class="col-sm-2">
+                        <input type="text" ng-model="patient.postal_code" class="form-control" id="zip" placeholder="zip" />                       
+                    </div>                                      
+                </div>
+                <div class="form-group">
+                     
+                    <label for="homephone" class="col-sm-2 control-label">
+                        Phone:
+                    </label>
+                    <div class="col-sm-4">
+                       <label class="control-label">Home</label> <input type="phone" ng-model="patient.phone_home" class="form-control" id="homephone" placeholder="Home phone" />                       
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="control-label">Cell</label><input type="phone" ng-model="patient.phone_cell" class="form-control" id="cellphone" placeholder="Cell phone" /> 
+                    </div>
+                </div>                               
+                <div class="form-group">
+                     
+                    <label class="col-sm-2 control-label">
+                        Email:
+                    </label>
+                    <div class="col-sm-10">
+                        <input ng-model="patient.email" type="email" class="form-control" id="email"/>
                     </div>
                 </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                         
+                        <button type="submit" class="btn btn-primary" ng-click="saveData()">
+                            Save
+                        </button>
+                        <a href="/card/#/" class="btn btn-default" role="button">Cancel</a> <!-- Go back home -- >
+                    </div>
+                </div>
+              
+            </form>
+                </div>
+                <div class="panel-footer">
+                    Panel footer
+                </div>
             </div>
-            <div class="col-md-3"></div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Add Service {patient.fname}}
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    Services List here
+                </div>
+                <div class="panel-footer">
+                                       
+                </div>
+            </div>
         </div>
     </div>
 </div>
