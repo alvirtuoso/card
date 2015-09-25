@@ -1,5 +1,11 @@
-    <div class="row">
+<!--     <div class="row">
+        <div class="header">
+        <input type="text" class="search_box" id="search_box" placeholder="Search Patient" autocomplete="off">
+        </div>
+    </div>
+    <div id="searchres" class="searchres"></div> -->
         <div class="small-10 column">
+        <!-- <p>Date: <input type="text" id="datepicker"></p> -->
             <!-- <p>{{users | json}}</p> -->
             <h4>Glow Medical Spa</h4>
         </div>
@@ -12,10 +18,10 @@
                 <hr>
                 <div class="medium-12 sm-centered lg-centered column">
                     <ul class="small-block-grid-4 text-center">
-                        <li><a href="#editProfile/{{p.id}}"><i class="glyphicon glyphicon-edit fa-2x"></i></a></li>
-                        <li><a href=""><i class="glyphicon glyphicon-file fa-2x"></i></a></li>
-                        <li><a href=""><i class="glyphicon glyphicon-film fa-2x"></i></a></li>
-                        <li><a href=""><i class="glyphicon glyphicon-remove fa-2x"></i></a></li>
+                        <li><a href="#" ng-click="openEditForm(p)"><i class="glyphicon glyphicon-edit fa-2x"></i></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-file fa-2x"></i></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-film fa-2x"></i></a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-remove fa-2x"></i></a></li>
                     </ul>
                 </div>
                <hr>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://720kb.github.io/csshelper/assets/ext/src/helper.css"> -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="src/angular-datepicker.css">
+</head>
+<body ng-app="mainApp">
+<div class="container" ng-controller="actrl">
+        <div class="row">
+          <div class="col-md-4">
+
+  <datepicker date-format="{{'MM/dd/yyyy'}}" >
+  <input ng-model="dob" type="text"/>
+</datepicker>
+   </div>
+   </div>		
+<h4>
+	{{dob}}
+</h4>
+</div>
+
+  //.....
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+<script type="text/javascript" src="src/angular-datepicker.js"></script>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

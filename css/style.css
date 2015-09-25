@@ -1,5 +1,5 @@
 body {
-    background-color:#5682B4;
+    background-color:#FFFFFF;
 }
 
 .circle {
@@ -21,3 +21,102 @@ body {
   overflow: hidden;
 }
 
+.header {
+    background-color: #4c66a4;
+    padding: 6px 0px 5px 20px;
+}
+
+.searchres {
+    margin-left: 20px;
+    width: 400px;
+    border: #f0f0f0 1px solid;
+    border-radius: 5px;
+}
+
+.img {
+    float: left;
+    margin: 5 5 5 5px;
+}
+
+.search_box {
+    width: 400px;
+    height: 15px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: verdana;
+    color: black;
+    font-size: 15px;
+}
+
+.name {
+    margin-top: 14px;
+}
+
+.user_div {
+    clear: both;
+    font-family: verdana;
+    border-top: #f0f0f0 1px solid;
+    color: black;
+    font-size: 15px;
+    height: 10px;
+    margin: 1px;
+    padding: 10px;
+    width: 380px;
+    border-radius: 4px;
+    vertical-align: top;
+}
+
+.user_div:hover {
+    background: #4c66a4;
+    color: #fff;
+    cursor: pointer
+}
+
+.no_data {
+    height: 40px;
+    background-color: #F0F0F0;
+    padding: 10 0 0 10px;
+    width: 390px;
+    border-radius: 5px;
+    font-family: verdana;
+    color: black;
+    font-size: 15px;
+}
+
+.name {
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+.cntry {
+    margin: 0 0 0 50px;
+    font-size: 13px
+}
+.fade-enter-setup{
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -ms-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    opacity: 0;
+}
+
+.fade-enter-start{
+    opacity: 1;
+}
+/*a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}*/
