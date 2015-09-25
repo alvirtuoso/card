@@ -1,9 +1,9 @@
 		$(document).ready(function()
 		{
-			//alert('test');
 			$("#search_box").keyup(
 				function()
 				{
+			// alert('test');
 
 					var search_string = $("#search_box").val();
 					if(search_string == '')
@@ -12,6 +12,7 @@
 					}
 					else
 					{
+					// alert(search_string);
 						
 						$.ajax(
 						{

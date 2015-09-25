@@ -19,11 +19,16 @@
 </head>
 
 <body ng-app="mainApp">
-<!--     <div class="header">
+    <div class="header">
         <input type="text" class="search_box" id="search_box" placeholder="Search Patient" autocomplete="off">
     </div>
-    <div id="searchres" class="searchres"></div> -->
-    <div ng-view ng-animate="{enter: 'fade-enter'}"></div>
+    <div id="searchres" class="searchres"></div>
+    <div class="row">
+
+             <div ng-view ng-animate="{enter: 'fade-enter'}"></div>           
+
+    </div>
+
     <!-- <div class="row" ng-controller="mainCtrl">
     <div class="small-10 column">
         <h2>Responsive Cards</h2>
